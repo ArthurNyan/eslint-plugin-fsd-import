@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-fsd-import-next",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Plugin for checking imports path in FSD project",
   "author": "Arthur Nakhatakyan",
   "license": "MIT",
