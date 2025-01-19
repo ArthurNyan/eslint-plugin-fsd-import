@@ -15,7 +15,7 @@ Auto-fix available.
 
 ```js
 ...
-"fsd-import/public-api-imports": [<enabled>, { alias: string, testFilesPatterns: array }] 
+"fsd-import-next/public-api-imports": [<enabled>, { alias: string, testFilesPatterns: array }] 
 ...
 ```
 
@@ -50,15 +50,15 @@ export type {ISidebarItem} from './model/types/sidebar'
 Examples of **incorrect** code for this rule:
 
 ```js
-// "fsd-import/public-api-imports": "error"
+// "fsd-import-next/public-api-imports": "error"
 // in MainPage.tsx
 import { ISidebarItem } from 'widgets/Sidebar/model/types/sidebar';
 
-// "fsd-import/public-api-imports": ["error", { alias: "@" }]
+// "fsd-import-next/public-api-imports": ["error", { alias: "@" }]
 // in MainPage.tsx
 import { ISidebarItem } from '@/widgets/Sidebar/model/types/sidebar';
 
-// "fsd-import/public-api-imports": ["error", { alias: "@", testFilesPatterns: ['**/StoreDecorator.tsx'] }]
+// "fsd-import-next/public-api-imports": ["error", { alias: "@", testFilesPatterns: ['**/StoreDecorator.tsx'] }]
 // in StoreDecorator.tsx
 import { ISidebarItem } from '@/widgets/Sidebar/model/types/sidebar';
 ```
@@ -66,15 +66,15 @@ import { ISidebarItem } from '@/widgets/Sidebar/model/types/sidebar';
 Examples of **correct** code for this rule:
 
 ```js
-// "fsd-import/public-api-imports": "error"
+// "fsd-import-next/public-api-imports": "error"
 // in MainPage.tsx
 import { ISidebarItem } from 'widgets/Sidebar';
 
-// "fsd-import/public-api-imports": ["error", { alias: "@"}]
+// "fsd-import-next/public-api-imports": ["error", { alias: "@"}]
 // in MainPage.tsx
 import { ISidebarItem } from '@/widgets/Sidebar';
 
-// "fsd-import/public-api-imports": ["error", { alias: "@", testFilesPatterns: ['**/StoreDecorator.tsx'] }]
+// "fsd-import-next/public-api-imports": ["error", { alias: "@", testFilesPatterns: ['**/StoreDecorator.tsx'] }]
 // in StoreDecorator.tsx
 import { ISidebarItem } from '@/widgets/Sidebar/testing';
 ```

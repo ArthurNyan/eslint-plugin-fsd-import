@@ -14,7 +14,7 @@ Auto-fix available.
 
 ```js
 ...
-"fsd-import/fsd-relative-path": [<enabled>, { alias: string }] 
+"fsd-import-next/fsd-relative-path": [<enabled>, { alias: string }] 
 ...
 ```
 
@@ -35,11 +35,11 @@ src
 Examples of **incorrect** code for this rule:
 
 ```js
-// "fsd-import/fsd-relative-path": "error"
+// "fsd-import-next/fsd-relative-path": "error"
 // in Sidebar.tsx
 import { ISidebarItem } from 'widgets/Sidebar/model/types/sidebar';
 
-// "fsd-import/fsd-relative-path": ["error", { alias: "@" }]
+// "fsd-import-next/fsd-relative-path": ["error", { alias: "@" }]
 // in Sidebar.tsx
 import { ISidebarItem } from '@/widgets/Sidebar/model/types/sidebar';
 ```

@@ -34,9 +34,9 @@ Then configure the rules you want to use under the rules section.
 ```json
 {
     "rules": {
-        "fsd-import/fsd-relative-path": "error",
-        "fsd-import/public-api-imports": "error",
-        "fsd-import/layer-imports": "error",
+        "fsd-import-next/fsd-relative-path": "error",
+        "fsd-import-next/public-api-imports": "error",
+        "fsd-import-next/layer-imports": "error",
     }
 }
 ```

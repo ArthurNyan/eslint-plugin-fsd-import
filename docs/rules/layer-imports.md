@@ -25,15 +25,15 @@ This rule reports on imports from higher layers into layer below. Only `entities
 Examples of **incorrect** code for this rule:
 
 ```js
-// "fsd-import/layer-imports": "error"
+// "fsd-import-next/layer-imports": "error"
 // in src/entities/Article/file.tsx
 import { Button } from 'features/Button.tsx';
 
-// "fsd-import/layer-imports": ["error", { alias: "@" }]
+// "fsd-import-next/layer-imports": ["error", { alias: "@" }]
 // in src/entities/Article/file.tsx
 import { Button } from '@/features/Button.tsx';
 
-// "fsd-import/layer-imports": ["error", { alias: "@" }]
+// "fsd-import-next/layer-imports": ["error", { alias: "@" }]
 // in src/shared/StoreDecorator.tsx
 import { StateSchema } from '@/app/providers/StoreProvider';
 ```
@@ -41,15 +41,15 @@ import { StateSchema } from '@/app/providers/StoreProvider';
 Examples of **correct** code for this rule:
 
 ```js
-// "fsd-import/layer-imports": "error"
+// "fsd-import-next/layer-imports": "error"
 // in src/entities/Article/file.tsx
 import { Button } from 'shared/Button.tsx';
 
-// "fsd-import/layer-imports": ["error", { alias: "@" }]
+// "fsd-import-next/layer-imports": ["error", { alias: "@" }]
 // in src/entities/Article/file.tsx
 import { Button } from '@/shared/Button.tsx';
 
-// "fsd-import/layer-imports": ["error", { alias: "@", ignoreImportPatterns: ['**/StoreDecorator.tsx'] }]
+// "fsd-import-next/layer-imports": ["error", { alias: "@", ignoreImportPatterns: ['**/StoreDecorator.tsx'] }]
 // in src/shared/StoreDecorator.tsx
 import { StateSchema } from '@/app/providers/StoreProvider';
 ```
