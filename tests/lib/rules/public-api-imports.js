@@ -1,6 +1,5 @@
 /**
  * @fileoverview Restrict imports only from public API
- * @author vgratsilev
  */
 'use strict';
 

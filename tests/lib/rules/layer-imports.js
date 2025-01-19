@@ -1,6 +1,5 @@
 /**
  * @fileoverview Restrict imports only from layers below
- * @author vgratsilev
  */
 'use strict';
 
@@ -103,7 +102,7 @@ ruleTester.run('layer-imports', rule, {
         },
         {
             filename: 'C:\\project\\src\\widgets\\Article\\file.test.ts',
-            code: 'import { addCommentFormActions, addCommentFormReducer } from \'@/pages/Main.tsx\';',
+            code: 'import { addCommentFormActions, addCommentFormReducer } from \'@/views/Main.tsx\';',
             errors: [{ message: 'Current layer can import only layers below: (features, entities, shared).' }],
             options: aliasOptions,
         },

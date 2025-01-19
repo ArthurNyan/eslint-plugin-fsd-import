@@ -1,4 +1,4 @@
-# eslint-plugin-fsd-import
+# eslint-plugin-fsd-import-next
 
 Plugin for checking imports path in [FSD](https://feature-sliced.design/) project.
 
@@ -10,10 +10,10 @@ You'll first need to install [ESLint](https://eslint.org/):
 npm i eslint --save-dev
 ```
 
-Next, install `eslint-plugin-fsd-import`:
+Next, install `eslint-plugin-fsd-import-next`:
 
 ```sh
-npm install eslint-plugin-fsd-import --save-dev
+npm install eslint-plugin-fsd-import-next --save-dev
 ```
 
 ## Usage
@@ -43,11 +43,11 @@ Then configure the rules you want to use under the rules section.
 
 ## Supported Rules
 Check FSD imports is correct:
-* [fsd-relative-path](https://github.com/vgratsilev/eslint-plugin-fsd-import/blob/main/docs/rules/fsd-relative-path.md)
+* [fsd-relative-path](https://github.com/ArthurNyan/eslint-plugin-fsd-import-next/blob/main/docs/rules/fsd-relative-path.md)
  Imports within one slice should be relative.
-* [public-api-imports](https://github.com/vgratsilev/eslint-plugin-fsd-import/blob/main/docs/rules/public-api-imports.md)
+* [public-api-imports](https://github.com/ArthurNyan/eslint-plugin-fsd-import-next/blob/main/docs/rules/public-api-imports.md)
 Absolute imports should be only from public API.
-* [layer-imports](https://github.com/vgratsilev/eslint-plugin-fsd-import/blob/main/docs/rules/layer-imports.md)
+* [layer-imports](https://github.com/ArthurNyan/eslint-plugin-fsd-import-next/blob/main/docs/rules/layer-imports.md)
 Modules on one layer can only interact with modules from the layers strictly below.
 
 

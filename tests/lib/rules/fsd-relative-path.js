@@ -1,6 +1,5 @@
 /**
  * @fileoverview Restrict only relative path imports within single slice
- * @author vgratsilev
  */
 'use strict';
 

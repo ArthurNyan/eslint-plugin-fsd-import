@@ -4,7 +4,7 @@ Absolute imports should be allowed only from public API (index.ts).
 
 ## Rule Details
 
-This rule reports on absolute imports not from Public API for entities, features, pages, widgets layers. 
+This rule reports on absolute imports not from Public API for entities, features, views, widgets layers.
 You should re-export data from index.ts file or from testing.ts for test data.
 Auto-fix available.
 
@@ -23,7 +23,7 @@ Project structure example:
 
 ```
 src
-  pages
+  views
     Main
       ui
         MainPage.tsx
@@ -82,4 +82,3 @@ import { ISidebarItem } from '@/widgets/Sidebar/testing';
 ## When Not To Use It
 
 If you do not use Feature Slices Design in your project.
-

@@ -1,9 +1,11 @@
 {
-  "name": "eslint-plugin-fsd-import",
-  "version": "0.0.13",
+  "name": "eslint-plugin-fsd-import-next",
+  "version": "0.0.1",
   "description": "Plugin for checking imports path in FSD project",
-  "repository": "https://github.com/vgratsilev/eslint-plugin-fsd-import",
-  "homepage": "https://github.com/vgratsilev/eslint-plugin-fsd-import#readme",
+  "author": "Arthur Nakhatakyan",
+  "license": "MIT",
+  "repository": "https://github.com/ArthurNyan/eslint-plugin-fsd-import-next",
+  "homepage": "https://github.com/ArthurNyan/eslint-plugin-fsd-import-next#readme",
   "keywords": [
     "eslint",
     "eslintplugin",
@@ -11,7 +13,6 @@
     "fsd",
     "feature-sliced"
   ],
-  "author": "vgratsilev",
   "main": "./lib/index.js",
   "exports": "./lib/index.js",
   "scripts": {
@@ -33,6 +34,5 @@
   },
   "peerDependencies": {
     "eslint": ">=7"
-  },
-  "license": "ISC"
+  }
 }
